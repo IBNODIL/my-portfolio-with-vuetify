@@ -1,45 +1,59 @@
 <template>
-  <v-app>
+  <v-app :theme="theme">
     <v-layout>
-      <v-app-bar
-        color="yellow-darken-2"
-        prominent
-      >
-        <v-toolbar-title>IBNODIL</v-toolbar-title>
+      <v-app-bar prominent>
+        <v-toolbar-title style="font-size: 24px; font-weight: 14px;">IBNODIL</v-toolbar-title>
 
         <v-spacer></v-spacer>
 
-        <v-list
-          v-for="item in items"
-          bg-color="yellow-darken-2"
-          class="hidden-sm-and-down"
-        >
-          <v-btn
-          routes
-          :to="item.to"
-          variant="outlined" 
-          class="ma-1" 
-          :prepend-icon="item.icon"
-          >
-            {{ item.title }}
+        <v-list class="d-flex hidden-sm-and-down align-center">
+          <v-list-item class="hidden-sm-and-down">
+            <v-switch @update:modelValue="changeMode" v-model="switchEquals" inset hide-details color="green-darken-2 "></v-switch>
+          </v-list-item>
+
+          <v-btn to="/" variant="text" class="mx-1 hidden-sm-and-down" prepend-icon="mdi-home" color="green-darken-2">
+            Home
+          </v-btn>
+
+          <v-btn to="/aboutme" variant="text" class="mx-1 hidden-sm-and-down" prepend-icon="mdi-information-outline" color="green-darken-2">
+            About me
+          </v-btn>
+
+          <v-btn to="/certificates" variant="text" class="mx-1 hidden-sm-and-down" prepend-icon="mdi-certificate" color="green-darken-2">
+            Certificates
+          </v-btn>
+
+          <v-btn to="/projects" variant="text" class="mx-1 hidden-sm-and-down" prepend-icon="mdi-file-code-outline" color="green-darken-2">
+            Projects
           </v-btn>
         </v-list>
 
         <v-app-bar-nav-icon class="hidden-md-and-up" variant="text" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       </v-app-bar>
 
-      <v-navigation-drawer
-        v-model="drawer"
-        location="left"
-        temporary
-        class="hidden-md-and-up"
-      >
-        <v-list v-for="item in items">
-          <v-btn 
-          :to="item.to"
-          :prepend-icon="item.icon" 
-          variant="text"
-          >{{ item.title }}</v-btn>
+      <v-navigation-drawer v-model="drawer" location="left" temporary class="hidden-md-and-up">
+        <v-list>
+          <v-btn to="/" variant="text" class="ma-1" prepend-icon="mdi-home" color="green-darken-2">
+            Home
+          </v-btn>
+
+          <v-btn to="/aboutme" variant="text" class="ma-1" prepend-icon="mdi-information-outline" color="green-darken-2">
+            About me
+          </v-btn>
+
+          <v-btn to="/certificates" variant="text" class="ma-1" prepend-icon="mdi-certificate" color="green-darken-2">
+            Certificates
+          </v-btn>
+
+          <v-btn to="/projects" variant="text" class="ma-1" prepend-icon="mdi-file-code-outline" color="green-darken-2">
+            Projects
+          </v-btn>
+
+          <v-divider></v-divider>
+
+          <v-list-item>
+            <v-switch @update:modelValue="changeMode" v-model="switchEquals" inset hide-details color="green-darken-2 "></v-switch>
+          </v-list-item>
         </v-list>
       </v-navigation-drawer>
 
@@ -52,45 +66,33 @@
 
 
 <script>
-  import { RouterView } from 'vue-router';
+import { RouterView } from 'vue-router';
 
-  export default {
-    data: () => ({
-      drawer: false,
-      group: null,
-      items: [
-        {
-          title: 'Home',
-          to: '/',
-          icon: 'mdi-home'
-        },
-        {
-          title: 'About me',
-          to: '/aboutme',
-          icon: 'mdi-information-outline'
-        },
-        {
-          title: 'Certificates',
-          to: '/certificates',
-          icon: 'mdi-certificate'
-        },
-        {
-          title: 'Projects',
-          to: '/projects',
-          icon: 'mdi-file-code-outline'
-        },
-      ],
-    }),
+export default {
+  data: () => ({
+    drawer: false,
+    group: null,
+    theme: 'light',
+    switchEquals: false,
+  }),
 
-    watch: {
-      group () {
-        this.drawer = false
-      },
+  watch: {
+    group() {
+      this.drawer = false
     },
+  },
+
+  methods: {
+    changeMode(){
+      if(this.switchEquals == false){
+        this.theme = 'dark';
+      } else{
+        this.theme = 'light';
+      }
+    }
   }
+}
 </script>
 
 
-<style>
-
-</style>
+<style></style>
