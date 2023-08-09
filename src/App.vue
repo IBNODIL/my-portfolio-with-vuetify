@@ -57,7 +57,7 @@
         </v-list>
       </v-navigation-drawer>
 
-      <v-main style="height: 500px;">
+      <v-main>
         <RouterView></RouterView>
       </v-main>
     </v-layout>
