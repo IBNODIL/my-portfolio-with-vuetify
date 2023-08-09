@@ -5,7 +5,7 @@
       <v-list-item class="text-div">
         <p> Hi. My name is  </p>
         <h2 class="name">Rustamov Mubashshirhon</h2>
-        <h2 class="not-name">I am a Fron-end developer</h2>
+        <h2 class="not-name">I am a Front-end developer</h2>
         <h2 class="not-name">from Uzbekistan</h2>
       </v-list-item>
 
@@ -18,11 +18,23 @@
         color="green-darken-2" 
         icon
         to="/aboutme"
+        class="hidden-sm-and-down"
       >
         <v-icon>mdi-chevron-right</v-icon>
       </v-btn>
+
+      
     </v-list>
   </v-layout>
+  <v-btn 
+        id="to-about-from-home-for-phone"
+        color="green-darken-2" 
+        icon
+        to="/aboutme"
+        class="hidden-md-and-up"
+      >
+        <v-icon>mdi-chevron-down</v-icon>
+      </v-btn>
 </template>
 
 
@@ -44,6 +56,11 @@
     width: 50%;
   }
 
+  #to-aboutme-from-home{
+    position: absolute;
+      top: 40%;
+      left: 50px;
+  }
   @media screen and (max-width: 1260px) {
     #div{
       max-width: 90vw;
