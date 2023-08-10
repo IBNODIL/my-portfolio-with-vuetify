@@ -26,15 +26,6 @@
       
     </v-list>
   </v-layout>
-  <v-btn 
-        id="to-about-from-home-for-phone"
-        color="green-darken-2" 
-        icon
-        to="/aboutme"
-        class="hidden-md-and-up"
-      >
-        <v-icon>mdi-chevron-down</v-icon>
-      </v-btn>
 </template>
 
 
@@ -55,21 +46,10 @@
   .text-div{
     width: 50%;
   }
-
-  #to-aboutme-from-home{
-    position: absolute;
-      top: 40%;
-      left: 50px;
-  }
   @media screen and (max-width: 1260px) {
     #div{
       max-width: 90vw;
       font-size: 20px;
-    }
-    #to-about-from-home{
-      position: absolute;
-      top: 200px;
-      right: 50px;
     }
   }
 
@@ -97,12 +77,6 @@
 
     .not-name{
       font-size: 20px;
-    }
-
-    #to-about-from-home{
-      position: absolute;;
-      top: 40%;
-      right: 50px;
     }
   }
 

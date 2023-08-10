@@ -29,30 +29,7 @@
       </div>
     </v-timeline-item>
   </v-timeline>
-
-    
   </v-list>
-
-  <v-btn 
-        id="to-certificates-from-about"
-        color="green-darken-2" 
-        icon
-        to="/certificates"
-        class="hidden-sm-and-down"
-      >
-        <v-icon>mdi-chevron-right</v-icon>
-      </v-btn>
-
-
-      <v-btn 
-        id="to-home-from-about"
-        color="green-darken-2" 
-        icon
-        to="/"
-        class="hidden-sm-and-down"
-      >
-        <v-icon>mdi-chevron-left</v-icon>
-      </v-btn>
 </template>
 
 
@@ -136,17 +113,5 @@
 
   .icon-not-complated{
     font-size: 25px;
-  }
-
-  #to-certificates-from-about{
-    position: absolute;
-    top: 40%;
-    right: 50px;
-  }
-
-  #to-home-from-about{
-    position: absolute;
-      top: 40%;
-      left: 50px;
   }
 </style>
