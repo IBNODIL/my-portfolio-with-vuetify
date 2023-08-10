@@ -9,25 +9,26 @@
       </p>
     </v-list-item>
 
-    <v-list-item id="road-and-languages"
-      bg-color: blue-darken-2
-      class="d-flex align-center justify-lg-space-evenly hidden-sm-and-down"
+    <v-timeline align="start">
+    <v-timeline-item
+      v-for="(year, i) in years"
+      :key="i"
+      :dot-color="year.color"
+      size="small"
     >
-      <div id="langueges"
-        class="d-flex align-center justify-lg-space-evenly hidden-sm-and-down "
-      >
-        <v-icon class="hidden-sm-and-down icon-complated" color="green" >mdi-language-html5</v-icon>
-        <v-icon class="hidden-sm-and-down icon-complated" color="green" >mdi-language-css3</v-icon>
-        <v-icon class="hidden-sm-and-down icon-complated" color="green" >mdi-bootstrap</v-icon>
-        <v-icon class="hidden-sm-and-down icon-complated" color="green" >mdi-sass</v-icon>
-        <v-icon class="hidden-sm-and-down icon-complated" color="green" >mdi-language-javascript</v-icon>
-        <v-icon class="hidden-sm-and-down icon-complated" color="green" >mdi-vuejs</v-icon>
-        <v-icon class="hidden-sm-and-down icon-complated" color="green" >mdi-vuetify</v-icon>
-        <v-icon class="hidden-sm-and-down icon-car" color="yellow-darken-3" >mdi-car-lifted-pickup</v-icon>
-        <v-icon class="hidden-sm-and-down icon-not-complated" color="red" >mdi-react</v-icon>
-        <v-icon class="hidden-sm-and-down icon-not-complated">mdi-dots-horizontal</v-icon>
+      <template v-slot:opposite>
+        <div
+          :class="`pt-1 headline font-weight-bold text-${year.color}`"
+          v-text="year.year"
+        ></div>
+      </template>
+      <div>
+        <h2 :class="`mt-n1 headline font-weight-light mb-4 text-${year.color}`">
+          {{year.language}} <v-icon>{{year.icon}}</v-icon>
+        </h2>
       </div>
-    </v-list-item>
+    </v-timeline-item>
+  </v-timeline>
 
     
   </v-list>
@@ -56,7 +57,54 @@
 
 
 <script>
-
+  export default {
+    data: () => ({
+      years: [
+        {
+          color: 'orange',
+          year: '2022',
+          language: 'HTML',
+          icon: 'mdi-language-html5'
+        },
+        {
+          color: 'light-blue-darken-3',
+          year: '2022-2023',
+          language: 'CSS',
+          icon: 'mdi-language-css3'
+        },
+        {
+          color: 'purple-darken-2',
+          year: '2023',
+          language: 'Bootstrap',
+          icon: 'mdi-bootstrap'
+        },
+        {
+          color: 'pink-accent-3',
+          year: '2023',
+          language: 'SASS',
+          icon: 'mdi-sass'
+        },
+        {
+          color: 'yellow-darken-1',
+          year: '2023',
+          language: 'JavaScript',
+          icon: 'mdi-language-javascript'
+        },
+        {
+          color: 'green-darken-3',
+          year: '2023',
+          language: 'Vue',
+          icon: 'mdi-vuejs'
+        },
+        {
+          color: 'cyan-accent-4',
+          year: '2023',
+          language: 'Vuetify',
+          icon: 'mdi-vuetify'
+        },
+      ],
+    }),
+  }
 </script>
 
 
