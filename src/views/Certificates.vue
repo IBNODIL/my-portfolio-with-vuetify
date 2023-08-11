@@ -29,7 +29,10 @@
 
 
 <style scoped>
-  img{
+  .ma-6{
     width: 350px;
+  }
+  img{
+    width: 100%;
   }
 </style>
