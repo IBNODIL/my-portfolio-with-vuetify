@@ -31,6 +31,22 @@
         </p>
       </v-card-subtitle>
     </v-card>
+
+    <v-card class="ma-6 pa-0">
+      <a href="http://fayzmedia.uz/" target="_blank">
+        <img src="../assets/projects-img/fayz-media.png">
+      </a>
+      <v-card-title>
+        Quizz app use API
+      </v-card-title>
+      <v-card-subtitle>
+        <p>
+          <v-icon>mdi-language-html5</v-icon>
+          <v-icon>mdi-language-css3</v-icon>
+          <v-icon>mdi-language-javascript</v-icon>
+        </p>
+      </v-card-subtitle>
+    </v-card>
   </v-layout>
 </template>
 

@@ -5,11 +5,11 @@
         class="text-uppercase"
         id="text"
       >
-        I embarked on my programming journey in 2022. Firstly, I learned HTML, followed by the frontend developing. In 2023 march, I uploaded my first site to web. Coding remained a hobby for me until early 2023. It was at that point that I started to pursue programming more seriously.
+      Hello, I'm Rustamov Mubashshirhon. I'm a front-end developer from Uzbekistan. I started my programming journey in 2022. I began by learning HTML. In March 2023, I launched my first website online. At that time, I wasn't familiar with JavaScript<v-icon>mdi-language-javascript</v-icon>, so my first website was composed solely of HTML<v-icon>mdi-language-html5</v-icon> and CSS<v-icon>mdi-language-css3</v-icon>. Programming remained a hobby for me until early 2023. It was then that I began to take programming more seriously.
       </p>
     </v-list-item>
 
-    <v-timeline align="start">
+    <v-timeline align="start" class="ma-5">
     <v-timeline-item
       v-for="(year, i) in years"
       :key="i"
@@ -28,7 +28,35 @@
         </h2>
       </div>
     </v-timeline-item>
-  </v-timeline>
+    </v-timeline>
+
+    <v-card style="min-width: 90vw; " color="green-darken-2" class="pa-5 ma-5 rounded-xl float-left">
+      <h1>I cnow this languges:</h1>
+      <v-card-item>
+        <v-card-title>English</v-card-title>
+        <v-progress-linear
+          v-model="english"
+          height="15"
+        ></v-progress-linear>
+      </v-card-item>
+
+      <v-card-item>
+        <v-card-title>Russian</v-card-title>
+        <v-progress-linear
+          v-model="russian"
+          height="15"
+        ></v-progress-linear>
+      </v-card-item>
+
+      <v-card-item>
+        <v-card-title>Uzbek</v-card-title>
+        <v-progress-linear
+          v-model="uzbek"
+          height="15"
+        ></v-progress-linear>
+      </v-card-item>
+    </v-card>
+    
   </v-list>
 </template>
 
@@ -36,6 +64,9 @@
 <script>
   export default {
     data: () => ({
+      english: 62,
+      russian: 85,
+      uzbek: 85,
       years: [
         {
           color: 'orange',
