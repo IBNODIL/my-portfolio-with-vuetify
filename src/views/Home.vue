@@ -11,19 +11,7 @@
 
       <v-list-item id="img-div">
         <img src="../assets/img/my-img.png" alt="" class="rounded-circle">
-      </v-list-item>
-
-      <v-btn 
-        id="to-about-from-home"
-        color="green-darken-2" 
-        icon
-        to="/aboutme"
-        class="hidden-sm-and-down"
-      >
-        <v-icon>mdi-chevron-right</v-icon>
-      </v-btn>
-
-      
+      </v-list-item>      
     </v-list>
   </v-layout>
 </template>
