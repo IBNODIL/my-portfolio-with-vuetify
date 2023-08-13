@@ -37,7 +37,7 @@
         <img src="../assets/projects-img/fayz-media.png">
       </a>
       <v-card-title>
-        Quizz app use API
+        Fayz media
       </v-card-title>
       <v-card-subtitle>
         <p>
