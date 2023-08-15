@@ -67,7 +67,7 @@ export default {
       })
         .then(
           message => {
-            alert(message)
+            alert('Thank you for massage')
             console.log('send')
           }
         )
