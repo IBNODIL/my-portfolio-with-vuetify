@@ -10,7 +10,7 @@
 
       <v-textarea v-model="massage" :rules="massageRule" label="Massage for me"></v-textarea>
 
-      <v-btn @submit="formSend" block class="mt-2" id="send">Send</v-btn>
+      <v-btn @click="formSend" block class="mt-2" id="send">Send</v-btn>
     </v-form>
   </v-sheet>
 </template>
