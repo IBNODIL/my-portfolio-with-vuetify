@@ -59,7 +59,7 @@ export default {
   methods: {
     formSend() {
       Email.send({
-        SecureToken: "e41e265f-a532-4aa8-b78c-15335e949c18",
+        SecureToken: "1b17e9cc-7dc8-403a-966b-24b7321d6e12",
         To: 'ibnodil2010@gmail.com',
         From: "ibnodil2010@gmail.com",
         Subject: "From portfolio",
