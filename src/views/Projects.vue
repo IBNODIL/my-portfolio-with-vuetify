@@ -47,6 +47,36 @@
         </p>
       </v-card-subtitle>
     </v-card>
+
+    <v-card class="ma-6 pa-0">
+      <a href="https://qr-code-component-ibn-odil-dev.netlify.app/" target="_blank">
+        <img src="../assets/projects-img/qr-code-component.png">
+      </a>
+      <v-card-title>
+        Qr Code Component (Frontend Mentor)
+      </v-card-title>
+      <v-card-subtitle>
+        <p>
+          <v-icon>mdi-language-html5</v-icon>
+          <v-icon>mdi-language-css3</v-icon>
+        </p>
+      </v-card-subtitle>
+    </v-card>
+
+    <v-card class="ma-6 pa-0">
+      <a href="https://product-preview-card-component-dev.netlify.app/" target="_blank">
+        <img src="../assets/projects-img/product-preview-card-component.png">
+      </a>
+      <v-card-title>
+        Product Preview Card Component (Frontend Mentor)
+      </v-card-title>
+      <v-card-subtitle>
+        <p>
+          <v-icon>mdi-language-html5</v-icon>
+          <v-icon>mdi-language-css3</v-icon>
+        </p>
+      </v-card-subtitle>
+    </v-card>
   </v-layout>
 </template>
 
