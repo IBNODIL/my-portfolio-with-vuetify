@@ -1,6 +1,22 @@
 <template>
   <v-layout class=" d-flex align-center flex-wrap">
     <v-card class="ma-6 pa-0">
+      <a href="https://nestone-ibn-odil-dev.netlify.app/" target="_blank">
+        <img src="../assets/projects-img/nestone.png">
+      </a>
+      <v-card-title>
+        Nestone
+      </v-card-title>
+      <v-card-subtitle>
+        <p>
+          <v-icon>mdi-vuejs</v-icon>
+          <v-icon>mdi-vuetify</v-icon>
+          <v-icon>mdi-language-css3</v-icon>
+        </p>
+      </v-card-subtitle>
+    </v-card>
+
+    <v-card class="ma-6 pa-0">
       <a href="https://weather-app-with-vue-ibn-odil-dev.netlify.app/" target="_blank">
         <img src="../assets/projects-img/weather-app-iv-vue.png">
       </a>
