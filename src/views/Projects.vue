@@ -18,6 +18,22 @@
 
     <v-card class="ma-6 pa-0">
       <a href="https://weather-app-with-vue-ibn-odil-dev.netlify.app/" target="_blank">
+        <img src="../assets/projects-img/parallax.jpg">
+      </a>
+      <v-card-title>
+        Parallax
+      </v-card-title>
+      <v-card-subtitle>
+        <p>
+          <v-icon>mdi-language-html5</v-icon>
+          <v-icon>mdi-language-javascript</v-icon>
+          <v-icon>mdi-language-css3</v-icon>
+        </p>
+      </v-card-subtitle>
+    </v-card>
+
+    <v-card class="ma-6 pa-0">
+      <a href="https://weather-app-with-vue-ibn-odil-dev.netlify.app/" target="_blank">
         <img src="../assets/projects-img/weather-app-iv-vue.png">
       </a>
       <v-card-title>
