@@ -27,9 +27,9 @@
             Projects
           </v-btn>
 
-          <v-btn to="/contactme" variant="text" class="ma-1 hidden-sm-and-down" color="green-darken-2">
+          <!-- <v-btn to="/contactme" variant="text" class="ma-1 hidden-sm-and-down" color="green-darken-2">
             Contact with me
-          </v-btn>
+          </v-btn> -->
         </v-list>
 
         <v-app-bar-nav-icon class="hidden-md-and-up" variant="text" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
