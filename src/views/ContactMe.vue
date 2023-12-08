@@ -59,13 +59,12 @@ export default {
   methods: {
     formSend() {
       Email.send({
-        SecureToken: "1b17e9cc-7dc8-403a-966b-24b7321d6e12",
+        SecureToken: "baf98cfa-58c6-43e9-b374-9c4385634ac6",
         To: 'ibnodil2010@gmail.com',
         From: "ibnodil2010@gmail.com",
         Subject: "From portfolio",
         Body: `Hi, my name is ${this.firstName} My phone number ${this.phoneNumber} and my email ${this.email}. ${this.massage}`
-      })
-        .then(
+      }).then(
           message => {
             alert('Thank you for massage')
             console.log('send')
