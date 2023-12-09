@@ -1,7 +1,7 @@
 <template>
   <v-app :theme="theme">
     <v-layout>
-      <v-app-bar prominent>
+      <v-app-bar prominent class="position-fixed">
         <v-toolbar-title style="font-size: 24px; font-weight: 14px;">IBNODIL</v-toolbar-title>
 
         <v-spacer></v-spacer>
@@ -15,13 +15,13 @@
             Home
           </v-btn>
 
-          <v-btn to="/aboutme" variant="text" class="mx-1 hidden-sm-and-down" prepend-icon="mdi-information-outline" color="green-darken-2">
-            About me
-          </v-btn>
+          <a href="/#about-me"><v-btn variant="text" class="mx-1 hidden-sm-and-down" prepend-icon="mdi-information-outline" color="green-darken-2">
+            About me 
+          </v-btn></a>
 
-          <v-btn to="/certificates" variant="text" class="mx-1 hidden-sm-and-down" prepend-icon="mdi-certificate" color="green-darken-2">
+          <a href="/#certificates"><v-btn variant="text" class="mx-1 hidden-sm-and-down" prepend-icon="mdi-certificate" color="green-darken-2">
             Certificates
-          </v-btn>
+          </v-btn></a>
 
           <v-btn to="/projects" variant="text" class="mx-1 hidden-sm-and-down" prepend-icon="mdi-file-code-outline" color="green-darken-2">
             Projects
@@ -35,27 +35,27 @@
         <v-app-bar-nav-icon class="hidden-md-and-up" variant="text" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       </v-app-bar>
 
-      <v-navigation-drawer v-model="drawer" location="left" temporary class="hidden-md-and-up">
+      <v-navigation-drawer v-model="drawer" location="left" temporary class="position-fixed hidden-md-and-up">
         <v-list>
           <v-btn to="/" variant="text" class="ma-1" prepend-icon="mdi-home" color="green-darken-2">
             Home
           </v-btn>
 
-          <v-btn to="/aboutme" variant="text" class="ma-1" prepend-icon="mdi-information-outline" color="green-darken-2">
-            About me
-          </v-btn>
+          <a href="/#about-me"><v-btn variant="text" class="ma-1" prepend-icon="mdi-information-outline" color="green-darken-2">
+            About m
+          </v-btn></a>
 
-          <v-btn to="/certificates" variant="text" class="ma-1" prepend-icon="mdi-certificate" color="green-darken-2">
-            Certificates
-          </v-btn>
+          <a href="/#certificates"><v-btn variant="text" class="ma-1" prepend-icon="mdi-certificate" color="green-darken-2">
+            Certificates 
+          </v-btn></a>
 
           <v-btn to="/projects" variant="text" class="ma-1" prepend-icon="mdi-file-code-outline" color="green-darken-2">
             Projects
           </v-btn>
 
-          <v-btn to="/contactme" variant="text" class="ma-1" color="green-darken-2">
+          <!-- <v-btn to="/contactme" variant="text" class="ma-1" color="green-darken-2">
             Contact with me
-          </v-btn>
+          </v-btn> -->
 
           <v-divider></v-divider>
 
@@ -75,7 +75,6 @@
 
 <script>
 import { RouterView } from 'vue-router';
-
 export default {
   data: () => ({
     drawer: false,
@@ -103,4 +102,10 @@ export default {
 </script>
 
 
-<style></style>
+<style>
+a{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+</style>
