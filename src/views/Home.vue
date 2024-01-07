@@ -48,7 +48,7 @@
     </v-timeline>
 
     <v-card style="min-width: 90vw; " color="green-darken-2" class="pa-5 ma-5 rounded-xl float-left">
-      <h1>I cnow this languges:</h1>
+      <h1>I know this languges:</h1>
       <v-card-item>
         <v-card-title>English</v-card-title>
         <v-progress-linear
@@ -149,6 +149,13 @@ export default {
           year: '2023',
           language: 'Vuetify',
           icon: 'mdi-vuetify'
+        },
+
+        {
+          color: 'blue',
+          year: '2024',
+          language: 'Webpack',
+          icon: 'mdi-webpack'
         },
       ],
     }),

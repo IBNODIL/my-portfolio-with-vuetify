@@ -42,7 +42,7 @@
           </v-btn>
 
           <a href="/#about-me"><v-btn variant="text" class="ma-1" prepend-icon="mdi-information-outline" color="green-darken-2">
-            About m
+            About me
           </v-btn></a>
 
           <a href="/#certificates"><v-btn variant="text" class="ma-1" prepend-icon="mdi-certificate" color="green-darken-2">
