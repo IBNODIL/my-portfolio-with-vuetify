@@ -27,53 +27,162 @@
     </v-list-item>
 
     <v-timeline align="start" class="ma-5">
+      
     <v-timeline-item
-      v-for="(year, i) in years"
-      :key="i"
-      :dot-color="year.color"
+      dot-color="#e86127ff"
       size="small"
     >
       <template v-slot:opposite>
         <div
-          :class="`pt-1 headline font-weight-bold text-${year.color}`"
-          v-text="year.year"
+          style="color: #e86127ff"
+          class="pt-1 headline font-weight-bold"
+          v-text="2022"
         ></div>
       </template>
       <div>
-        <h2 :class="`mt-n1 headline font-weight-light mb-4 text-${year.color}`">
-          {{year.language}} <v-icon>{{year.icon}}</v-icon>
+        <h2 class="mt-n1 headline font-weight-light mb-4">
+          <span style="color: #e86127ff" >HTML <v-icon>mdi-language-html5</v-icon></span>
         </h2>
       </div>
     </v-timeline-item>
-    </v-timeline>
 
-    <v-card style="min-width: 90vw; " color="green-darken-2" class="pa-5 ma-5 rounded-xl float-left">
-      <h1>I know this languges:</h1>
-      <v-card-item>
-        <v-card-title>English</v-card-title>
-        <v-progress-linear
-          v-model="english"
-          height="15"
-        ></v-progress-linear>
-      </v-card-item>
+    <v-timeline-item
+      dot-color="#2761e8ff"
+      size="small"
+    >
+      <template v-slot:opposite>
+        <div
+          style="color: #2761e8ff"
+          class="pt-1 headline font-weight-bold"
+        >2022-2023</div>
+      </template>
+      <div>
+        <h2 class="mt-n1 headline font-weight-light mb-4">
+          <span style="color: #2761e8ff" >CSS <v-icon>mdi-language-css3</v-icon></span>
+        </h2>
+      </div>
+    </v-timeline-item>
 
-      <v-card-item>
-        <v-card-title>Russian</v-card-title>
-        <v-progress-linear
-          v-model="russian"
-          height="15"
-        ></v-progress-linear>
-      </v-card-item>
+    <v-timeline-item
+      dot-color="#7a11f2ff"
+      size="small"
+    >
+      <template v-slot:opposite>
+        <div
+          style="color: #7a11f2ff"
+          class="pt-1 headline font-weight-bold"
+        >2023</div>
+      </template>
+      <div>
+        <h2 class="mt-n1 headline font-weight-light mb-4">
+          <span style="color: #7a11f2ff" >Bootstrap <v-icon>mdi-bootstrap</v-icon></span>
+        </h2>
+      </div>
+    </v-timeline-item>
 
-      <v-card-item>
-        <v-card-title>Uzbek</v-card-title>
-        <v-progress-linear
-          v-model="uzbek"
-          height="15"
-        ></v-progress-linear>
-      </v-card-item>
-    </v-card>
-    
+    <v-timeline-item
+      dot-color="#c76394ff"
+      size="small"
+    >
+      <template v-slot:opposite>
+        <div
+          style="color: #c76394ff"
+          class="pt-1 headline font-weight-bold"
+        >2023</div>
+      </template>
+      <div>
+        <h2 class="mt-n1 headline font-weight-light mb-4">
+          <span style="color: #c76394ff" >SASS <v-icon>mdi-sass</v-icon></span>
+        </h2>
+      </div>
+    </v-timeline-item>
+
+    <v-timeline-item
+      dot-color="#f0d71dff"
+      size="small"
+    >
+      <template v-slot:opposite>
+        <div
+          style="color: #f0d71dff"
+          class="pt-1 headline font-weight-bold"
+        >2023</div>
+      </template>
+      <div>
+        <h2 class="mt-n1 headline font-weight-light mb-4">
+          <span style="color: #f0d71dff" >JavaScript <v-icon>mdi-language-javascript</v-icon></span>
+        </h2>
+      </div>
+    </v-timeline-item>
+
+    <v-timeline-item
+      dot-color="#3eb37eff"
+      size="small"
+    >
+      <template v-slot:opposite>
+        <div
+          style="color: #3eb37eff"
+          class="pt-1 headline font-weight-bold"
+        >2023</div>
+      </template>
+      <div>
+        <h2 class="mt-n1 headline font-weight-light mb-4">
+          <span style="color: #3eb37eff" >Vue <v-icon>mdi-vuejs</v-icon></span>
+        </h2>
+      </div>
+    </v-timeline-item>
+
+    <v-timeline-item
+      dot-color="#adddffff"
+      size="small"
+    >
+      <template v-slot:opposite>
+        <div
+          style="color: #adddffff"
+          class="pt-1 headline font-weight-bold"
+        >2023</div>
+      </template>
+      <div>
+        <h2 class="mt-n1 headline font-weight-light mb-4">
+          <span style="color: #adddffff" >Vuetify <v-icon>mdi-vuetify</v-icon></span>
+        </h2>
+      </div>
+    </v-timeline-item>
+
+    <v-timeline-item
+      dot-color="#1c76baff"
+      size="small"
+    >
+      <template v-slot:opposite>
+        <div
+          style="color: #1c76baff"
+          class="pt-1 headline font-weight-bold"
+        >2024</div>
+      </template>
+      <div>
+        <h2 class="mt-n1 headline font-weight-light mb-4">
+          <span style="color: #1c76baff" >Webpack <v-icon>mdi-webpack</v-icon></span>
+        </h2>
+      </div>
+    </v-timeline-item>
+
+    <v-timeline-item
+      dot-color="#208ebdff"
+      size="small"
+    >
+      <template v-slot:opposite>
+        <div
+          style="color: #208ebdff"
+          class="pt-1 headline font-weight-bold"
+        >2024</div>
+      </template>
+      <div>
+        <h2 class="mt-n1 headline font-weight-light mb-4">
+          <span style="color: #208ebdff" >Wordpress <v-icon>mdi-wordpress</v-icon></span>
+        </h2>
+      </div>
+    </v-timeline-item>
+
+    </v-timeline>    
   </v-list>
   </div>
   
@@ -109,53 +218,10 @@ export default {
       uzbek: 85,
       years: [
         {
-          color: 'orange',
-          year: '2022',
-          language: 'HTML',
-          icon: 'mdi-language-html5'
-        },
-        {
-          color: 'light-blue-darken-3',
-          year: '2022-2023',
-          language: 'CSS',
-          icon: 'mdi-language-css3'
-        },
-        {
-          color: 'purple-darken-2',
-          year: '2023',
-          language: 'Bootstrap',
-          icon: 'mdi-bootstrap'
-        },
-        {
-          color: 'pink-accent-3',
-          year: '2023',
-          language: 'SASS',
-          icon: 'mdi-sass'
-        },
-        {
-          color: 'yellow-darken-1',
-          year: '2023',
-          language: 'JavaScript',
-          icon: 'mdi-language-javascript'
-        },
-        {
-          color: 'green-darken-3',
-          year: '2023',
-          language: 'Vue',
-          icon: 'mdi-vuejs'
-        },
-        {
-          color: 'cyan-accent-4',
-          year: '2023',
-          language: 'Vuetify',
-          icon: 'mdi-vuetify'
-        },
-
-        {
-          color: 'blue',
+          color: '#208ebdff',
           year: '2024',
-          language: 'Webpack',
-          icon: 'mdi-webpack'
+          language: 'Wordpress',
+          icon: 'mdi-wordpress'
         },
       ],
     }),

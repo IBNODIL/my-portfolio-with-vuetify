@@ -15,14 +15,6 @@
             Home
           </v-btn>
 
-          <a href="/#about-me"><v-btn variant="text" class="mx-1 hidden-sm-and-down" prepend-icon="mdi-information-outline" color="green-darken-2">
-            About me 
-          </v-btn></a>
-
-          <a href="/#certificates"><v-btn variant="text" class="mx-1 hidden-sm-and-down" prepend-icon="mdi-certificate" color="green-darken-2">
-            Certificates
-          </v-btn></a>
-
           <v-btn to="/projects" variant="text" class="mx-1 hidden-sm-and-down" prepend-icon="mdi-file-code-outline" color="green-darken-2">
             Projects
           </v-btn>
@@ -40,14 +32,6 @@
           <v-btn to="/" variant="text" class="ma-1" prepend-icon="mdi-home" color="green-darken-2">
             Home
           </v-btn>
-
-          <a href="/#about-me"><v-btn variant="text" class="ma-1" prepend-icon="mdi-information-outline" color="green-darken-2">
-            About me
-          </v-btn></a>
-
-          <a href="/#certificates"><v-btn variant="text" class="ma-1" prepend-icon="mdi-certificate" color="green-darken-2">
-            Certificates 
-          </v-btn></a>
 
           <v-btn to="/projects" variant="text" class="ma-1" prepend-icon="mdi-file-code-outline" color="green-darken-2">
             Projects

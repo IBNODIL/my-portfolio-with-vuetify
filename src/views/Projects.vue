@@ -1,5 +1,20 @@
 <template>
   <v-layout class=" d-flex align-center flex-wrap">
+    
+    <v-card class="ma-6 pa-0 elevation-5 pb-2">
+      <a href="http://fayzmedia.uz/" target="_blank">
+        <img src="../assets/projects-img/fayz-media.png">
+      </a>
+      <v-card-title>
+        Fayz media
+      </v-card-title>
+      <v-card-subtitle>
+        <p>
+          <v-icon>mdi-wordpress</v-icon>
+        </p>
+      </v-card-subtitle>
+    </v-card>
+
     <v-card class="ma-6 pa-0 elevation-5 pb-2">
       <a href="https://countries-ibn-odil-dev.netlify.app/" target="_blank">
         <img src="../assets/projects-img/Countries.png">
@@ -127,23 +142,7 @@
       </v-card-subtitle>
     </v-card>
 
-    <v-card class="ma-6 pa-0 elevation-5 pb-2">
-      <a href="http://fayzmedia.uz/" target="_blank">
-        <img src="../assets/projects-img/fayz-media.png">
-      </a>
-      <v-card-title>
-        Fayz media
-      </v-card-title>
-      <v-card-subtitle>
-        <p>
-          <v-icon>mdi-language-html5</v-icon>
-          <v-icon>mdi-language-css3</v-icon>
-          <v-icon>mdi-language-javascript</v-icon>
-        </p>
-      </v-card-subtitle>
-    </v-card>
-
-    <v-card class="ma-6 pa-0 elevation-5 pb-2">
+    <!-- <v-card class="ma-6 pa-0 elevation-5 pb-2">
       <a href="https://qr-code-component-ibn-odil-dev.netlify.app/" target="_blank">
         <img src="../assets/projects-img/qr-code-component.png">
       </a>
@@ -156,9 +155,9 @@
           <v-icon>mdi-language-css3</v-icon>
         </p>
       </v-card-subtitle>
-    </v-card>
+    </v-card> -->
 
-    <v-card class="ma-6 pa-0 elevation-5 pb-2">
+    <!-- <v-card class="ma-6 pa-0 elevation-5 pb-2">
       <a href="https://product-preview-card-component-dev.netlify.app/" target="_blank">
         <img src="../assets/projects-img/product-preview-card-component.png">
       </a>
@@ -171,7 +170,8 @@
           <v-icon>mdi-language-css3</v-icon>
         </p>
       </v-card-subtitle>
-    </v-card>
+    </v-card> -->
+
   </v-layout>
 </template>
 
