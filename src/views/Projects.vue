@@ -1,17 +1,5 @@
 <template>
   <v-layout class=" d-flex align-center flex-wrap">
-    
-    <v-card class="ma-6 projects-cards pa-0 elevation-5 pb-2">
-      <a href="/challange">
-        <img src="../assets/img/Frontend_mentor.png">
-      </a>
-      <v-card-title>
-        #100daysOfCode
-      </v-card-title>
-      <v-card-subtitle>
-        100days of code projects
-      </v-card-subtitle>
-    </v-card>
 
     <v-card class="ma-6 projects-cards pa-0 elevation-5 pb-2">
       <a href="http://fayzmedia.uz/" target="_blank">

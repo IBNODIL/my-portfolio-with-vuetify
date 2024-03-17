@@ -19,6 +19,10 @@
             Projects
           </v-btn>
 
+          <v-btn to="/challange" variant="text" class="mx-1 hidden-sm-and-down" prepend-icon="mdi-file-code-outline" color="green-darken-2">
+            100 Days Of Code 
+          </v-btn>
+
           <!-- <v-btn to="/contactme" variant="text" class="ma-1 hidden-sm-and-down" color="green-darken-2">
             Contact with me
           </v-btn> -->
@@ -35,6 +39,10 @@
 
           <v-btn to="/projects" variant="text" class="ma-1" prepend-icon="mdi-file-code-outline" color="green-darken-2">
             Projects
+          </v-btn>
+
+          <v-btn to="/challange" variant="text" class="ma-1" prepend-icon="mdi-file-code-outline" color="green-darken-2">
+            100 Days Of Code 
           </v-btn>
 
           <!-- <v-btn to="/contactme" variant="text" class="ma-1" color="green-darken-2">
