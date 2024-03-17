@@ -3,7 +3,7 @@
     
     <v-card class="ma-6 projects-cards pa-0 elevation-5 pb-2">
       <a href="/projects/100_days_of_code">
-        <img src="../assets/img/Frontend mentor.png">
+        <img src="../assets/img/Frontend_mentor.png">
       </a>
       <v-card-title>
         #100daysOfCode
