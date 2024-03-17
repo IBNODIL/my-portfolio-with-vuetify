@@ -26,7 +26,7 @@
       </p>
     </v-list-item>
 
-    <v-timeline align="start" class="ma-5">
+    <v-timeline alihgn="start" class="ma-5">
       
     <v-timeline-item
       dot-color="#e86127ff"
