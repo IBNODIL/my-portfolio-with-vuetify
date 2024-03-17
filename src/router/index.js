@@ -24,7 +24,7 @@ const router = createRouter({
     },
 
     {
-      path: '/projects/100_days_of_code',
+      path: '/projects/challange',
       name: 'challange',
       component: ChallangeProjects
     },
