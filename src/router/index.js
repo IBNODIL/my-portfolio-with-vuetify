@@ -24,7 +24,7 @@ const router = createRouter({
     },
 
     {
-      path: '/projects/challange',
+      path: '/challange',
       name: 'challange',
       component: ChallangeProjects
     },
