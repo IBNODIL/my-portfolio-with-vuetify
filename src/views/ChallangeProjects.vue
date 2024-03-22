@@ -304,6 +304,36 @@
     </v-card-subtitle>
   </v-card>
 
+  <v-card class="ma-6 projects-cards pa-0 elevation-5 pb-2">
+    <a href="https://huddle-landing-page-ibn-odil-dev.netlify.app/" target="_blank">
+      <img src="../assets/img/100_days_of_code/huddle-landing-page-with-single-introductory-section-master.jpg">
+    </a>
+    <v-card-title>
+      Huddle landing page with a single introductory section (Frontend Mentor)
+    </v-card-title>
+    <v-card-subtitle>
+      <p>
+        <v-icon>mdi-language-html5</v-icon>
+        <v-icon>mdi-language-css3</v-icon>
+      </p>
+    </v-card-subtitle>
+  </v-card>
+
+  <v-card class="ma-6 projects-cards pa-0 elevation-5 pb-2">
+    <a href="https://newsletter-sign-up-form-ibn-odil-dev.netlify.app/" target="_blank">
+      <img src="../assets/img/100_days_of_code/newsletter-sign-up-with-success-message-main.jpg">
+    </a>
+    <v-card-title>
+      Newsletter sign-up form with success message (Frontend Mentor)
+    </v-card-title>
+    <v-card-subtitle>
+      <p>
+        <v-icon>mdi-language-html5</v-icon>
+        <v-icon>mdi-language-css3</v-icon>
+      </p>
+    </v-card-subtitle>
+  </v-card>
+
 </v-layout>
 </template>
 
