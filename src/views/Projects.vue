@@ -142,6 +142,22 @@
       </v-card-subtitle>
     </v-card>
 
+    <v-card class="ma-6 projects-cards pa-0 elevation-5 pb-2">
+      <a href="https://clock-ibn-odil-dev.netlify.app/" target="_blank">
+        <img src="../assets/projects-img/clock.png">
+      </a>
+      <v-card-title>
+        Clock
+      </v-card-title>
+      <v-card-subtitle>
+        <p>
+          <v-icon>mdi-language-html5</v-icon>
+          <v-icon>mdi-language-css3</v-icon>
+          <v-icon>mdi-language-javascript</v-icon>
+        </p>
+      </v-card-subtitle>
+    </v-card>
+
     
   </v-layout>
 </template>
