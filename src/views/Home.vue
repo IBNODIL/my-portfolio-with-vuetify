@@ -10,7 +10,7 @@
       </v-list-item>
 
       <v-list-item id="img-div">
-        <img src="../assets/img/my-img.png" alt="" class="rounded-circle">
+        <img src="../assets/img/my-img.png" alt="" class="my_image">
       </v-list-item>      
     </v-list>
   </div>
@@ -182,6 +182,23 @@
       </div>
     </v-timeline-item>
 
+    <v-timeline-item
+      dot-color="#208ebdff"
+      size="small"
+    >
+      <template v-slot:opposite>
+        <div
+          style="color: #5ed2f2"
+          class="pt-1 headline font-weight-bold"
+        >2024</div>
+      </template>
+      <div>
+        <h2 class="mt-n1 headline font-weight-light mb-4">
+          <span style="color: #5ed2f2" >React <v-icon>mdi-react</v-icon></span>
+        </h2>
+      </div>
+    </v-timeline-item>
+
     </v-timeline>    
   </v-list>
   </div>
@@ -268,6 +285,12 @@ export default {
   .text-div{
     width: 50%;
   }
+
+  .my_image{
+    width: 500px;
+    border-radius: 50%;
+  }
+
   @media screen and (max-width: 1260px) {
     #div{
       max-width: 90vw;
