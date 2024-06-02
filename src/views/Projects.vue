@@ -95,6 +95,21 @@
     </v-card>
     
     <v-card class="ma-6 projects-cards pa-0 elevation-5 pb-2">
+      <a href="https://to-do-list-use-reactjs-ibn-odil-dev.netlify.app/" target="_blank">
+        <img src="../assets/projects-img/To-do-list-use-react.png">
+      </a>
+      <v-card-title>
+        To do list
+      </v-card-title>
+      <v-card-subtitle>
+        <p>
+          <v-icon>mdi-react</v-icon>
+          <v-icon>mdi-language-css3</v-icon>
+        </p>
+      </v-card-subtitle>
+    </v-card>
+
+    <v-card class="ma-6 projects-cards pa-0 elevation-5 pb-2">
       <a href="https://parallax-web-site-ibn-odil-dev.netlify.app/" target="_blank">
         <img src="../assets/projects-img/parallax.jpg">
       </a>
